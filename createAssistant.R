@@ -11,7 +11,8 @@ pkgs <- c(
   "CohortSurvival", "omock"
 )
 
-urls <- pkgs |>
+content <- pkgs |>
+  # find URL in descciption
   purrr::map(\(pkg) {
     con <- url(paste0("https://raw.githubusercontent.com/cran/", pkg, "/refs/heads/master/DESCRIPTION"))
     x <- read.dcf(con) |>
@@ -22,13 +23,15 @@ urls <- pkgs |>
     close(con)
     return(x)
   }) |>
-  purrr::flatten_chr()
-urls <- c(book, urls) |>
+  purrr::flatten_chr() |>
+  append(book) |>
+  # find sublinks
   purrr::map(\(x) {
     cli::cli_inform(c("i" = "Finding links for {.url {x}}"))
     links <- ragnar::ragnar_find_links(x = x)
   }) |>
   purrr::flatten_chr() |>
+  # read chuncks
   purrr::map(\(x) {
     tryCatch({
       cli::cli_inform(c("i" = "Reading markdown for {.url {x}}"))
@@ -49,8 +52,7 @@ store <- ragnar::ragnar_store_create(
   name = "omopverse"
 )
 
-urls |>
-  purrr::map(\(x) ragnar::ragnar_store_insert(store = store, chunks = x))
+purrr::map(content, \(x) ragnar::ragnar_store_insert(store = store, chunks = x))
 
 ragnar_store_build_index(store)
 
