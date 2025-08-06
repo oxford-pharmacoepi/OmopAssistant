@@ -48,13 +48,13 @@ file.remove(store_location)
 
 store <- ragnar::ragnar_store_create(
   store_location,
-  embed = \(x) ragnar::embed_ollama(x, model = "nomic-embed-text"),
+  embed = \(x) ragnar::embed_ollama(x, model = "mxbai-embed-large"),
   name = "omopverse"
 )
 
 purrr::map(content, \(x) ragnar::ragnar_store_insert(store = store, chunks = x))
 
-ragnar_store_build_index(store)
+ragnar::ragnar_store_build_index(store = store)
 
 store <- ragnar::ragnar_store_connect(location = here::here("ollama.ragnar.duckdb"))
 
@@ -62,20 +62,21 @@ store <- ragnar::ragnar_store_connect(location = here::here("ollama.ragnar.duckd
 #' You can register an ellmer tool to let the LLM retrieve chunks.
 system_prompt <- stringr::str_squish(
   "
-  You are an expert R programmer in the OMOP CDM. You are a good mentor giving
-  concise and terse instructions.
+  You are an expert R programmer and epidemiologist working with OMOP CDM data.
+  Use concise, accurate R examples using OMOPverse packages (e.g. CDMConnector,
+  CohortConstructor).
 
-  Before responding, retrieve relevant material from the knowledge store. Quote or
-  paraphrase passages, clearly marking your own words versus the source. Provide a
-  working link for every source cited, as well as any additional relevant links.
-  Do not answer unless you have retrieved and cited a source.
+  Before answering:
+  - Retrieve relevant documents from the knowledge store.
+  - Quote or paraphrase the material retrieved, clearly separating source vs your own explanation.
+  - Include direct links to cited content (e.g. .io documentation pages).
+  - If no relevant information is found, say 'No information available.'
+
+  Only answer if source material is retrieved.
   "
 )
-chat <- ellmer::chat_ollama(
-  system_prompt = system_prompt,
-  model = "llama3.1"
-)
+chat <- ellmer::chat_google_gemini(system_prompt = system_prompt)
 
 ragnar::ragnar_register_tool_retrieve(chat = chat, store = store, top_k = 10L)
 
-res <- chat$chat("How can I create a cohort of acetaminophen users?")
+chat$chat("How can I create a cohort of acetaminophen users?")
