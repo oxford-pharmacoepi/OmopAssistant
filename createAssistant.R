@@ -28,7 +28,7 @@ content <- pkgs |>
   # find sublinks
   purrr::map(\(x) {
     cli::cli_inform(c("i" = "Finding links for {.url {x}}"))
-    links <- ragnar::ragnar_find_links(x = x)
+    ragnar::ragnar_find_links(x = x)
   }) |>
   purrr::flatten_chr() |>
   # filter uninformative links
