@@ -31,6 +31,8 @@ content <- pkgs |>
     links <- ragnar::ragnar_find_links(x = x)
   }) |>
   purrr::flatten_chr() |>
+  # filter uninformative links
+  purrr::keep(\(x) !basename(x) %in% c("CONTRIBUTING.html", "LICENSE.html")) |>
   # read chuncks
   purrr::map(\(x) {
     tryCatch({
