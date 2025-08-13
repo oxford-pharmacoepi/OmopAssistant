@@ -29,3 +29,44 @@ documentationLinks <- function() {
     "omock" = "https://ohdsi.github.io/omock/"
   )
 }
+
+#' Read documentation chunks
+#'
+#' @return List of chunks of the OMOP documentation.
+#' @export
+#'
+#' @examples
+#' \donttest{
+#' documentationChunks()
+#' }
+#'
+documentationChunks <- function() {
+  # get information links
+  links <- documentationLinks()
+
+  # get related links
+  links <- links |>
+    purrr::map(ragnar::ragnar_find_links) |>
+    purrr::flatten_chr()
+
+  # remove uninformative links
+  links <- links[stringr::str_detect(
+    string = links,
+    pattern = "CONTRIBUTING\\.html$|LICENSE\\.html$",
+    negate = TRUE
+  )]
+
+  # read chunks
+  chunks <- links |>
+    purrr::map(\(link) {
+      tryCatch(
+        expr = ragnar::markdown_chunk(ragnar::read_as_markdown(link)),
+        error = function(e) {
+          cli::cli_inform(c("x" = "Failed to read markdown in {.url {link}}"))
+          NULL
+        })
+    }) |>
+    purrr::compact()
+
+  return(chunks)
+}
