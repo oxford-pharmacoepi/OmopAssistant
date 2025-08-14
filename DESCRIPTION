@@ -17,3 +17,7 @@ Imports:
     purrr,
     ragnar,
     stringr
+Suggests: 
+    knitr,
+    rmarkdown
+VignetteBuilder: knitr

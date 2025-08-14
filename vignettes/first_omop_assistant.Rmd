@@ -1,0 +1,19 @@
+---
+title: "Create my first omop assistant"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{first_omop_assistant}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+```{r setup}
+library(OmopAssistant)
+```
