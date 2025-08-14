@@ -2,3 +2,6 @@
 
 export(documentationChunks)
 export(documentationLinks)
+export(ellmerChat)
+export(storeCreate)
+export(storePath)

@@ -41,6 +41,9 @@ documentationLinks <- function() {
 #' }
 #'
 documentationChunks <- function() {
+  # retrieve links
+  cli::cli_inform(c("i" = "Retrieving information links."))
+
   # get information links
   links <- documentationLinks()
 
@@ -60,13 +63,23 @@ documentationChunks <- function() {
   chunks <- links |>
     purrr::map(\(link) {
       tryCatch(
-        expr = ragnar::markdown_chunk(ragnar::read_as_markdown(link)),
+        expr = {
+          cli::cli_inform(c("i" = "Reading information from {.url {link}}"))
+          ragnar::markdown_chunk(ragnar::read_as_markdown(link))
+        },
         error = function(e) {
           cli::cli_inform(c("x" = "Failed to read markdown in {.url {link}}"))
           NULL
         })
     }) |>
     purrr::compact()
+
+  l <- length(chunks)
+  if (l > 0) {
+    cli::cli_inform(c("v" = "Information retrieved from {l} link{?s}."))
+  } else {
+    cli::cli_inform(c("x" = "No information retrieved from links."))
+  }
 
   return(chunks)
 }

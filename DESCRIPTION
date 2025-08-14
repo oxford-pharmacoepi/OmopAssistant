@@ -11,6 +11,8 @@ RoxygenNote: 7.3.2
 URL: https://oxford-pharmacoepi.github.io/OmopAssistant/
 Imports: 
     cli,
+    duckdb,
+    ellmer,
     omopgenerics,
     purrr,
     ragnar,
