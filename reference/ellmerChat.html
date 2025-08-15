@@ -73,10 +73,860 @@
 <span class="r-in"><span>  name <span class="op">=</span> <span class="st">"my_omop_assistant"</span></span></span>
 <span class="r-in"><span><span class="op">)</span></span></span>
 <span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">ℹ</span> `OMOP_DATA_FOLDER` environment variable is not set, using temp directory.</span>
-<span class="r-err co"><span class="r-pr">#&gt;</span> <span class="error">Error in req_perform(req):</span> Failed to perform HTTP request.</span>
-<span class="r-err co"><span class="r-pr">#&gt;</span> <span style="font-weight: bold;">Caused by error in `curl::curl_fetch_memory()`:</span></span>
-<span class="r-err co"><span class="r-pr">#&gt;</span> <span style="color: #BBBB00;">!</span> Couldn't connect to server [localhost]:</span>
-<span class="r-err co"><span class="r-pr">#&gt;</span> Failed to connect to localhost port 11434 after 0 ms: Couldn't connect to server</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">ℹ</span> Retrieving information links.</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">ℹ</span> Reading information from</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span>   <span style="color: #0000BB; font-style: italic;">&lt;https://oxford-pharmacoepi.github.io/Tidy-R-programming-with-OMOP/&gt;</span></span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">ℹ</span> Reading information from</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span>   <span style="color: #0000BB; font-style: italic;">&lt;https://oxford-pharmacoepi.github.io/Tidy-R-programming-with-OMOP/adding_features.html&gt;</span></span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">ℹ</span> Reading information from</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span>   <span style="color: #0000BB; font-style: italic;">&lt;https://oxford-pharmacoepi.github.io/Tidy-R-programming-with-OMOP/cdm_reference.html&gt;</span></span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">ℹ</span> Reading information from</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span>   <span style="color: #0000BB; font-style: italic;">&lt;https://oxford-pharmacoepi.github.io/Tidy-R-programming-with-OMOP/creating_cohorts.html&gt;</span></span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">ℹ</span> Reading information from</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span>   <span style="color: #0000BB; font-style: italic;">&lt;https://oxford-pharmacoepi.github.io/Tidy-R-programming-with-OMOP/dbplyr_packages.html&gt;</span></span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">ℹ</span> Reading information from</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span>   <span style="color: #0000BB; font-style: italic;">&lt;https://oxford-pharmacoepi.github.io/Tidy-R-programming-with-OMOP/exploring_the_cdm.html&gt;</span></span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">ℹ</span> Reading information from</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span>   <span style="color: #0000BB; font-style: italic;">&lt;https://oxford-pharmacoepi.github.io/Tidy-R-programming-with-OMOP/intro.html&gt;</span></span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">ℹ</span> Reading information from</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span>   <span style="color: #0000BB; font-style: italic;">&lt;https://oxford-pharmacoepi.github.io/Tidy-R-programming-with-OMOP/omop.html&gt;</span></span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">ℹ</span> Reading information from</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span>   <span style="color: #0000BB; font-style: italic;">&lt;https://oxford-pharmacoepi.github.io/Tidy-R-programming-with-OMOP/tidyverse_expressions.html&gt;</span></span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">ℹ</span> Reading information from</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span>   <span style="color: #0000BB; font-style: italic;">&lt;https://oxford-pharmacoepi.github.io/Tidy-R-programming-with-OMOP/tidyverse_verbs.html&gt;</span></span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">ℹ</span> Reading information from</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span>   <span style="color: #0000BB; font-style: italic;">&lt;https://oxford-pharmacoepi.github.io/Tidy-R-programming-with-OMOP/working_with_cohorts.html&gt;</span></span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">ℹ</span> Reading information from</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span>   <span style="color: #0000BB; font-style: italic;">&lt;https://oxford-pharmacoepi.github.io/Tidy-R-programming-with-OMOP/working_with_databases_from_r.html&gt;</span></span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">ℹ</span> Reading information from <span style="color: #0000BB; font-style: italic;">&lt;https://darwin-eu.github.io/CDMConnector/&gt;</span></span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">ℹ</span> Reading information from</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span>   <span style="color: #0000BB; font-style: italic;">&lt;https://darwin-eu.github.io/CDMConnector/articles/a01_getting-started.html&gt;</span></span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">ℹ</span> Reading information from</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span>   <span style="color: #0000BB; font-style: italic;">&lt;https://darwin-eu.github.io/CDMConnector/articles/a02_cohorts.html&gt;</span></span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">ℹ</span> Reading information from</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span>   <span style="color: #0000BB; font-style: italic;">&lt;https://darwin-eu.github.io/CDMConnector/articles/a03_dbplyr.html&gt;</span></span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">ℹ</span> Reading information from</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span>   <span style="color: #0000BB; font-style: italic;">&lt;https://darwin-eu.github.io/CDMConnector/articles/a04_DBI_connection_examples.html&gt;</span></span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">ℹ</span> Reading information from</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span>   <span style="color: #0000BB; font-style: italic;">&lt;https://darwin-eu.github.io/CDMConnector/articles/a06_using_cdm_attributes.html&gt;</span></span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">ℹ</span> Reading information from</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span>   <span style="color: #0000BB; font-style: italic;">&lt;https://darwin-eu.github.io/CDMConnector/authors.html&gt;</span></span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">ℹ</span> Reading information from</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span>   <span style="color: #0000BB; font-style: italic;">&lt;https://darwin-eu.github.io/CDMConnector/index.html&gt;</span></span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">ℹ</span> Reading information from</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span>   <span style="color: #0000BB; font-style: italic;">&lt;https://darwin-eu.github.io/CDMConnector/news/index.html&gt;</span></span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">ℹ</span> Reading information from</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span>   <span style="color: #0000BB; font-style: italic;">&lt;https://darwin-eu.github.io/CDMConnector/pare_report.html&gt;</span></span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">ℹ</span> Reading information from</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span>   <span style="color: #0000BB; font-style: italic;">&lt;https://darwin-eu.github.io/CDMConnector/reference/cdmFromCon.html&gt;</span></span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">ℹ</span> Reading information from</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span>   <span style="color: #0000BB; font-style: italic;">&lt;https://darwin-eu.github.io/CDMConnector/reference/eunomiaDir.html&gt;</span></span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">ℹ</span> Reading information from</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span>   <span style="color: #0000BB; font-style: italic;">&lt;https://darwin-eu.github.io/CDMConnector/reference/index.html&gt;</span></span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">ℹ</span> Reading information from</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span>   <span style="color: #0000BB; font-style: italic;">&lt;https://darwin-eu.github.io/CDMConnector/reference/pipe.html&gt;</span></span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">ℹ</span> Reading information from <span style="color: #0000BB; font-style: italic;">&lt;https://darwin-eu.github.io/omopgenerics/&gt;</span></span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">ℹ</span> Reading information from</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span>   <span style="color: #0000BB; font-style: italic;">&lt;https://darwin-eu.github.io/omopgenerics/articles/cdm_reference.html&gt;</span></span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">ℹ</span> Reading information from</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span>   <span style="color: #0000BB; font-style: italic;">&lt;https://darwin-eu.github.io/omopgenerics/articles/codelists.html&gt;</span></span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">ℹ</span> Reading information from</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span>   <span style="color: #0000BB; font-style: italic;">&lt;https://darwin-eu.github.io/omopgenerics/articles/cohorts.html&gt;</span></span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">ℹ</span> Reading information from</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span>   <span style="color: #0000BB; font-style: italic;">&lt;https://darwin-eu.github.io/omopgenerics/articles/expanding_omopgenerics.html&gt;</span></span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">ℹ</span> Reading information from</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span>   <span style="color: #0000BB; font-style: italic;">&lt;https://darwin-eu.github.io/omopgenerics/articles/logging.html&gt;</span></span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">ℹ</span> Reading information from</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span>   <span style="color: #0000BB; font-style: italic;">&lt;https://darwin-eu.github.io/omopgenerics/articles/reexport.html&gt;</span></span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">ℹ</span> Reading information from</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span>   <span style="color: #0000BB; font-style: italic;">&lt;https://darwin-eu.github.io/omopgenerics/articles/summarised_result.html&gt;</span></span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">ℹ</span> Reading information from</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span>   <span style="color: #0000BB; font-style: italic;">&lt;https://darwin-eu.github.io/omopgenerics/authors.html&gt;</span></span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">ℹ</span> Reading information from</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span>   <span style="color: #0000BB; font-style: italic;">&lt;https://darwin-eu.github.io/omopgenerics/index.html&gt;</span></span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">ℹ</span> Reading information from</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span>   <span style="color: #0000BB; font-style: italic;">&lt;https://darwin-eu.github.io/omopgenerics/news/index.html&gt;</span></span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">ℹ</span> Reading information from</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span>   <span style="color: #0000BB; font-style: italic;">&lt;https://darwin-eu.github.io/omopgenerics/reference/achillesColumns.html&gt;</span></span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">ℹ</span> Reading information from</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span>   <span style="color: #0000BB; font-style: italic;">&lt;https://darwin-eu.github.io/omopgenerics/reference/achillesTables.html&gt;</span></span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">ℹ</span> Reading information from</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span>   <span style="color: #0000BB; font-style: italic;">&lt;https://darwin-eu.github.io/omopgenerics/reference/attrition.html&gt;</span></span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">ℹ</span> Reading information from</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span>   <span style="color: #0000BB; font-style: italic;">&lt;https://darwin-eu.github.io/omopgenerics/reference/cdmFromTables.html&gt;</span></span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">ℹ</span> Reading information from</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span>   <span style="color: #0000BB; font-style: italic;">&lt;https://darwin-eu.github.io/omopgenerics/reference/cohortColumns.html&gt;</span></span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">ℹ</span> Reading information from</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span>   <span style="color: #0000BB; font-style: italic;">&lt;https://darwin-eu.github.io/omopgenerics/reference/cohortCount.html&gt;</span></span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">ℹ</span> Reading information from</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span>   <span style="color: #0000BB; font-style: italic;">&lt;https://darwin-eu.github.io/omopgenerics/reference/cohortTables.html&gt;</span></span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">ℹ</span> Reading information from</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span>   <span style="color: #0000BB; font-style: italic;">&lt;https://darwin-eu.github.io/omopgenerics/reference/index.html&gt;</span></span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">ℹ</span> Reading information from</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span>   <span style="color: #0000BB; font-style: italic;">&lt;https://darwin-eu.github.io/omopgenerics/reference/newCodelist.html&gt;</span></span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">ℹ</span> Reading information from</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span>   <span style="color: #0000BB; font-style: italic;">&lt;https://darwin-eu.github.io/omopgenerics/reference/newCohortTable.html&gt;</span></span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">ℹ</span> Reading information from</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span>   <span style="color: #0000BB; font-style: italic;">&lt;https://darwin-eu.github.io/omopgenerics/reference/newConceptSetExpression.html&gt;</span></span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">ℹ</span> Reading information from</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span>   <span style="color: #0000BB; font-style: italic;">&lt;https://darwin-eu.github.io/omopgenerics/reference/omopColumns.html&gt;</span></span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">ℹ</span> Reading information from</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span>   <span style="color: #0000BB; font-style: italic;">&lt;https://darwin-eu.github.io/omopgenerics/reference/omopTables.html&gt;</span></span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">ℹ</span> Reading information from</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span>   <span style="color: #0000BB; font-style: italic;">&lt;https://darwin-eu.github.io/omopgenerics/reference/settings.html&gt;</span></span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">ℹ</span> Reading information from <span style="color: #0000BB; font-style: italic;">&lt;https://ohdsi.github.io/CohortConstructor/&gt;</span></span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">ℹ</span> Reading information from</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span>   <span style="color: #0000BB; font-style: italic;">&lt;https://ohdsi.github.io/CohortConstructor/articles/a00_introduction.html&gt;</span></span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">ℹ</span> Reading information from</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span>   <span style="color: #0000BB; font-style: italic;">&lt;https://ohdsi.github.io/CohortConstructor/articles/a01_building_base_cohorts.html&gt;</span></span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">ℹ</span> Reading information from</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span>   <span style="color: #0000BB; font-style: italic;">&lt;https://ohdsi.github.io/CohortConstructor/articles/a02_cohort_table_requirements.html&gt;</span></span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">ℹ</span> Reading information from</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span>   <span style="color: #0000BB; font-style: italic;">&lt;https://ohdsi.github.io/CohortConstructor/articles/a03_require_demographics.html&gt;</span></span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">ℹ</span> Reading information from</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span>   <span style="color: #0000BB; font-style: italic;">&lt;https://ohdsi.github.io/CohortConstructor/articles/a04_require_intersections.html&gt;</span></span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">ℹ</span> Reading information from</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span>   <span style="color: #0000BB; font-style: italic;">&lt;https://ohdsi.github.io/CohortConstructor/articles/a05_update_cohort_start_end.html&gt;</span></span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">ℹ</span> Reading information from</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span>   <span style="color: #0000BB; font-style: italic;">&lt;https://ohdsi.github.io/CohortConstructor/articles/a06_concatanate_cohorts.html&gt;</span></span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">ℹ</span> Reading information from</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span>   <span style="color: #0000BB; font-style: italic;">&lt;https://ohdsi.github.io/CohortConstructor/articles/a07_filter_cohorts.html&gt;</span></span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">ℹ</span> Reading information from</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span>   <span style="color: #0000BB; font-style: italic;">&lt;https://ohdsi.github.io/CohortConstructor/articles/a08_split_cohorts.html&gt;</span></span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">ℹ</span> Reading information from</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span>   <span style="color: #0000BB; font-style: italic;">&lt;https://ohdsi.github.io/CohortConstructor/articles/a09_combine_cohorts.html&gt;</span></span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">ℹ</span> Reading information from</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span>   <span style="color: #0000BB; font-style: italic;">&lt;https://ohdsi.github.io/CohortConstructor/articles/a10_match_cohorts.html&gt;</span></span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">ℹ</span> Reading information from</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span>   <span style="color: #0000BB; font-style: italic;">&lt;https://ohdsi.github.io/CohortConstructor/articles/a11_benchmark.html&gt;</span></span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">ℹ</span> Reading information from</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span>   <span style="color: #0000BB; font-style: italic;">&lt;https://ohdsi.github.io/CohortConstructor/articles/a12_behind_the_scenes.html&gt;</span></span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">ℹ</span> Reading information from</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span>   <span style="color: #0000BB; font-style: italic;">&lt;https://ohdsi.github.io/CohortConstructor/authors.html&gt;</span></span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">ℹ</span> Reading information from</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span>   <span style="color: #0000BB; font-style: italic;">&lt;https://ohdsi.github.io/CohortConstructor/index.html&gt;</span></span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">ℹ</span> Reading information from</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span>   <span style="color: #0000BB; font-style: italic;">&lt;https://ohdsi.github.io/CohortConstructor/news/index.html&gt;</span></span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">ℹ</span> Reading information from</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span>   <span style="color: #0000BB; font-style: italic;">&lt;https://ohdsi.github.io/CohortConstructor/reference/conceptCohort.html&gt;</span></span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">ℹ</span> Reading information from</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span>   <span style="color: #0000BB; font-style: italic;">&lt;https://ohdsi.github.io/CohortConstructor/reference/index.html&gt;</span></span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">ℹ</span> Reading information from</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span>   <span style="color: #0000BB; font-style: italic;">&lt;https://ohdsi.github.io/CohortConstructor/reference/padCohortEnd.html&gt;</span></span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">ℹ</span> Reading information from</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span>   <span style="color: #0000BB; font-style: italic;">&lt;https://ohdsi.github.io/CohortConstructor/reference/requireCohortIntersect.html&gt;</span></span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">ℹ</span> Reading information from</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span>   <span style="color: #0000BB; font-style: italic;">&lt;https://ohdsi.github.io/CohortConstructor/reference/requireDemographics.html&gt;</span></span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">ℹ</span> Reading information from</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span>   <span style="color: #0000BB; font-style: italic;">&lt;https://ohdsi.github.io/CohortConstructor/reference/requireInDateRange.html&gt;</span></span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">ℹ</span> Reading information from</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span>   <span style="color: #0000BB; font-style: italic;">&lt;https://ohdsi.github.io/CohortConstructor/reference/unionCohorts.html&gt;</span></span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">ℹ</span> Reading information from <span style="color: #0000BB; font-style: italic;">&lt;https://darwin-eu.github.io/visOmopResults/&gt;</span></span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">ℹ</span> Reading information from</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span>   <span style="color: #0000BB; font-style: italic;">&lt;https://darwin-eu.github.io/visOmopResults/articles/a01_tables.html&gt;</span></span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">ℹ</span> Reading information from</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span>   <span style="color: #0000BB; font-style: italic;">&lt;https://darwin-eu.github.io/visOmopResults/articles/a02_plots.html&gt;</span></span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">ℹ</span> Reading information from</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span>   <span style="color: #0000BB; font-style: italic;">&lt;https://darwin-eu.github.io/visOmopResults/authors.html&gt;</span></span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">ℹ</span> Reading information from</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span>   <span style="color: #0000BB; font-style: italic;">&lt;https://darwin-eu.github.io/visOmopResults/index.html&gt;</span></span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">ℹ</span> Reading information from</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span>   <span style="color: #0000BB; font-style: italic;">&lt;https://darwin-eu.github.io/visOmopResults/news/index.html&gt;</span></span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">ℹ</span> Reading information from</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span>   <span style="color: #0000BB; font-style: italic;">&lt;https://darwin-eu.github.io/visOmopResults/reference/barPlot.html&gt;</span></span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">ℹ</span> Reading information from</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span>   <span style="color: #0000BB; font-style: italic;">&lt;https://darwin-eu.github.io/visOmopResults/reference/index.html&gt;</span></span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">ℹ</span> Reading information from</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span>   <span style="color: #0000BB; font-style: italic;">&lt;https://darwin-eu.github.io/visOmopResults/reference/mockSummarisedResult.html&gt;</span></span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">ℹ</span> Reading information from</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span>   <span style="color: #0000BB; font-style: italic;">&lt;https://darwin-eu.github.io/visOmopResults/reference/themeVisOmop.html&gt;</span></span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">ℹ</span> Reading information from</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span>   <span style="color: #0000BB; font-style: italic;">&lt;https://darwin-eu.github.io/visOmopResults/reference/visOmopTable.html&gt;</span></span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">ℹ</span> Reading information from</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span>   <span style="color: #0000BB; font-style: italic;">&lt;https://darwin-eu.github.io/visOmopResults/reference/visTable.html&gt;</span></span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">ℹ</span> Reading information from <span style="color: #0000BB; font-style: italic;">&lt;https://ohdsi.github.io/PhenotypeR/&gt;</span></span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">ℹ</span> Reading information from</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span>   <span style="color: #0000BB; font-style: italic;">&lt;https://ohdsi.github.io/PhenotypeR/articles/CodelistDiagnostics.html&gt;</span></span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">ℹ</span> Reading information from</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span>   <span style="color: #0000BB; font-style: italic;">&lt;https://ohdsi.github.io/PhenotypeR/articles/CohortDiagnostics.html&gt;</span></span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">ℹ</span> Reading information from</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span>   <span style="color: #0000BB; font-style: italic;">&lt;https://ohdsi.github.io/PhenotypeR/articles/DatabaseDiagnostics.html&gt;</span></span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">ℹ</span> Reading information from</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span>   <span style="color: #0000BB; font-style: italic;">&lt;https://ohdsi.github.io/PhenotypeR/articles/PhenotypeDiagnostics.html&gt;</span></span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">ℹ</span> Reading information from</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span>   <span style="color: #0000BB; font-style: italic;">&lt;https://ohdsi.github.io/PhenotypeR/articles/PhenotypeExpectations.html&gt;</span></span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">ℹ</span> Reading information from</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span>   <span style="color: #0000BB; font-style: italic;">&lt;https://ohdsi.github.io/PhenotypeR/articles/PopulationDisgnostics.html&gt;</span></span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #BB0000;">✖</span> Failed to read markdown in</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span>   <span style="color: #0000BB; font-style: italic;">&lt;https://ohdsi.github.io/PhenotypeR/articles/PopulationDisgnostics.html&gt;</span></span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">ℹ</span> Reading information from</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span>   <span style="color: #0000BB; font-style: italic;">&lt;https://ohdsi.github.io/PhenotypeR/articles/ShinyDiagnostics.html&gt;</span></span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">ℹ</span> Reading information from <span style="color: #0000BB; font-style: italic;">&lt;https://ohdsi.github.io/PhenotypeR/authors.html&gt;</span></span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">ℹ</span> Reading information from <span style="color: #0000BB; font-style: italic;">&lt;https://ohdsi.github.io/PhenotypeR/index.html&gt;</span></span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">ℹ</span> Reading information from</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span>   <span style="color: #0000BB; font-style: italic;">&lt;https://ohdsi.github.io/PhenotypeR/reference/getCohortExpectations.html&gt;</span></span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">ℹ</span> Reading information from</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span>   <span style="color: #0000BB; font-style: italic;">&lt;https://ohdsi.github.io/PhenotypeR/reference/index.html&gt;</span></span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">ℹ</span> Reading information from</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span>   <span style="color: #0000BB; font-style: italic;">&lt;https://ohdsi.github.io/PhenotypeR/reference/phenotypeDiagnostics.html&gt;</span></span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">ℹ</span> Reading information from</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span>   <span style="color: #0000BB; font-style: italic;">&lt;https://ohdsi.github.io/PhenotypeR/reference/shinyDiagnostics.html&gt;</span></span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">ℹ</span> Reading information from <span style="color: #0000BB; font-style: italic;">&lt;https://ohdsi.github.io/OmopViewer/&gt;</span></span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">ℹ</span> Reading information from</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span>   <span style="color: #0000BB; font-style: italic;">&lt;https://ohdsi.github.io/OmopViewer/articles/background.html&gt;</span></span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">ℹ</span> Reading information from</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span>   <span style="color: #0000BB; font-style: italic;">&lt;https://ohdsi.github.io/OmopViewer/articles/dynamic_app.html&gt;</span></span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">ℹ</span> Reading information from</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span>   <span style="color: #0000BB; font-style: italic;">&lt;https://ohdsi.github.io/OmopViewer/articles/edit_static_content.html&gt;</span></span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">ℹ</span> Reading information from</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span>   <span style="color: #0000BB; font-style: italic;">&lt;https://ohdsi.github.io/OmopViewer/articles/export_static_app.html&gt;</span></span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">ℹ</span> Reading information from</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span>   <span style="color: #0000BB; font-style: italic;">&lt;https://ohdsi.github.io/OmopViewer/articles/extending_omopviewer.html&gt;</span></span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">ℹ</span> Reading information from</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span>   <span style="color: #0000BB; font-style: italic;">&lt;https://ohdsi.github.io/OmopViewer/articles/theming.html&gt;</span></span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">ℹ</span> Reading information from <span style="color: #0000BB; font-style: italic;">&lt;https://ohdsi.github.io/OmopViewer/authors.html&gt;</span></span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">ℹ</span> Reading information from <span style="color: #0000BB; font-style: italic;">&lt;https://ohdsi.github.io/OmopViewer/index.html&gt;</span></span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">ℹ</span> Reading information from</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span>   <span style="color: #0000BB; font-style: italic;">&lt;https://ohdsi.github.io/OmopViewer/reference/exportStaticApp.html&gt;</span></span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">ℹ</span> Reading information from</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span>   <span style="color: #0000BB; font-style: italic;">&lt;https://ohdsi.github.io/OmopViewer/reference/index.html&gt;</span></span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">ℹ</span> Reading information from</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span>   <span style="color: #0000BB; font-style: italic;">&lt;https://ohdsi.github.io/OmopViewer/reference/launchDynamicApp.html&gt;</span></span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">ℹ</span> Reading information from <span style="color: #0000BB; font-style: italic;">&lt;https://darwin-eu.github.io/DrugUtilisation/&gt;</span></span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">ℹ</span> Reading information from</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span>   <span style="color: #0000BB; font-style: italic;">&lt;https://darwin-eu.github.io/DrugUtilisation/articles/create_cohorts.html&gt;</span></span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">ℹ</span> Reading information from</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span>   <span style="color: #0000BB; font-style: italic;">&lt;https://darwin-eu.github.io/DrugUtilisation/articles/daily_dose_calculation.html&gt;</span></span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">ℹ</span> Reading information from</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span>   <span style="color: #0000BB; font-style: italic;">&lt;https://darwin-eu.github.io/DrugUtilisation/articles/drug_restart.html&gt;</span></span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">ℹ</span> Reading information from</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span>   <span style="color: #0000BB; font-style: italic;">&lt;https://darwin-eu.github.io/DrugUtilisation/articles/drug_utilisation.html&gt;</span></span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">ℹ</span> Reading information from</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span>   <span style="color: #0000BB; font-style: italic;">&lt;https://darwin-eu.github.io/DrugUtilisation/articles/indication.html&gt;</span></span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">ℹ</span> Reading information from</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span>   <span style="color: #0000BB; font-style: italic;">&lt;https://darwin-eu.github.io/DrugUtilisation/articles/mock_data.html&gt;</span></span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">ℹ</span> Reading information from</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span>   <span style="color: #0000BB; font-style: italic;">&lt;https://darwin-eu.github.io/DrugUtilisation/articles/summarise_treatments.html&gt;</span></span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">ℹ</span> Reading information from</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span>   <span style="color: #0000BB; font-style: italic;">&lt;https://darwin-eu.github.io/DrugUtilisation/articles/treatment_discontinuation.html&gt;</span></span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">ℹ</span> Reading information from</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span>   <span style="color: #0000BB; font-style: italic;">&lt;https://darwin-eu.github.io/DrugUtilisation/authors.html&gt;</span></span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">ℹ</span> Reading information from</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span>   <span style="color: #0000BB; font-style: italic;">&lt;https://darwin-eu.github.io/DrugUtilisation/index.html&gt;</span></span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">ℹ</span> Reading information from</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span>   <span style="color: #0000BB; font-style: italic;">&lt;https://darwin-eu.github.io/DrugUtilisation/news/index.html&gt;</span></span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">ℹ</span> Reading information from</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span>   <span style="color: #0000BB; font-style: italic;">&lt;https://darwin-eu.github.io/DrugUtilisation/reference/generateIngredientCohortSet.html&gt;</span></span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">ℹ</span> Reading information from</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span>   <span style="color: #0000BB; font-style: italic;">&lt;https://darwin-eu.github.io/DrugUtilisation/reference/index.html&gt;</span></span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">ℹ</span> Reading information from</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span>   <span style="color: #0000BB; font-style: italic;">&lt;https://darwin-eu.github.io/DrugUtilisation/reference/mockDrugUtilisation.html&gt;</span></span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">ℹ</span> Reading information from</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span>   <span style="color: #0000BB; font-style: italic;">&lt;https://darwin-eu.github.io/DrugUtilisation/reference/requireIsFirstDrugEntry.html&gt;</span></span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">ℹ</span> Reading information from</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span>   <span style="color: #0000BB; font-style: italic;">&lt;https://darwin-eu.github.io/DrugUtilisation/reference/requireObservationBeforeDrug.html&gt;</span></span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">ℹ</span> Reading information from</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span>   <span style="color: #0000BB; font-style: italic;">&lt;https://darwin-eu.github.io/DrugUtilisation/reference/summariseDrugUtilisation.html&gt;</span></span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">ℹ</span> Reading information from</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span>   <span style="color: #0000BB; font-style: italic;">&lt;https://darwin-eu.github.io/DrugUtilisation/reference/summariseIndication.html&gt;</span></span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">ℹ</span> Reading information from <span style="color: #0000BB; font-style: italic;">&lt;https://darwin-eu.github.io/IncidencePrevalence/&gt;</span></span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">ℹ</span> Reading information from</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span>   <span style="color: #0000BB; font-style: italic;">&lt;https://darwin-eu.github.io/IncidencePrevalence/articles/a01_Introduction_to_IncidencePrevalence.html&gt;</span></span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">ℹ</span> Reading information from</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span>   <span style="color: #0000BB; font-style: italic;">&lt;https://darwin-eu.github.io/IncidencePrevalence/articles/a02_Creating_denominator_populations.html&gt;</span></span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">ℹ</span> Reading information from</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span>   <span style="color: #0000BB; font-style: italic;">&lt;https://darwin-eu.github.io/IncidencePrevalence/articles/a03_Creating_target_denominator_populations.html&gt;</span></span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">ℹ</span> Reading information from</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span>   <span style="color: #0000BB; font-style: italic;">&lt;https://darwin-eu.github.io/IncidencePrevalence/articles/a04_Calculating_prevalence.html&gt;</span></span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">ℹ</span> Reading information from</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span>   <span style="color: #0000BB; font-style: italic;">&lt;https://darwin-eu.github.io/IncidencePrevalence/articles/a05_Calculating_incidence.html&gt;</span></span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">ℹ</span> Reading information from</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span>   <span style="color: #0000BB; font-style: italic;">&lt;https://darwin-eu.github.io/IncidencePrevalence/articles/a06_Working_with_IncidencePrevalence_Results.html&gt;</span></span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">ℹ</span> Reading information from</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span>   <span style="color: #0000BB; font-style: italic;">&lt;https://darwin-eu.github.io/IncidencePrevalence/articles/a07_benchmark.html&gt;</span></span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">ℹ</span> Reading information from</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span>   <span style="color: #0000BB; font-style: italic;">&lt;https://darwin-eu.github.io/IncidencePrevalence/authors.html&gt;</span></span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">ℹ</span> Reading information from</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span>   <span style="color: #0000BB; font-style: italic;">&lt;https://darwin-eu.github.io/IncidencePrevalence/index.html&gt;</span></span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">ℹ</span> Reading information from</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span>   <span style="color: #0000BB; font-style: italic;">&lt;https://darwin-eu.github.io/IncidencePrevalence/news/index.html&gt;</span></span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">ℹ</span> Reading information from</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span>   <span style="color: #0000BB; font-style: italic;">&lt;https://darwin-eu.github.io/IncidencePrevalence/reference/estimateIncidence.html&gt;</span></span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">ℹ</span> Reading information from</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span>   <span style="color: #0000BB; font-style: italic;">&lt;https://darwin-eu.github.io/IncidencePrevalence/reference/estimatePeriodPrevalence.html&gt;</span></span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">ℹ</span> Reading information from</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span>   <span style="color: #0000BB; font-style: italic;">&lt;https://darwin-eu.github.io/IncidencePrevalence/reference/estimatePointPrevalence.html&gt;</span></span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">ℹ</span> Reading information from</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span>   <span style="color: #0000BB; font-style: italic;">&lt;https://darwin-eu.github.io/IncidencePrevalence/reference/generateDenominatorCohortSet.html&gt;</span></span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">ℹ</span> Reading information from</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span>   <span style="color: #0000BB; font-style: italic;">&lt;https://darwin-eu.github.io/IncidencePrevalence/reference/index.html&gt;</span></span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">ℹ</span> Reading information from</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span>   <span style="color: #0000BB; font-style: italic;">&lt;https://darwin-eu.github.io/IncidencePrevalence/reference/mockIncidencePrevalence.html&gt;</span></span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">ℹ</span> Reading information from</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span>   <span style="color: #0000BB; font-style: italic;">&lt;https://darwin-eu.github.io/IncidencePrevalence/reference/plotIncidence.html&gt;</span></span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">ℹ</span> Reading information from</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span>   <span style="color: #0000BB; font-style: italic;">&lt;https://darwin-eu.github.io/IncidencePrevalence/reference/plotPrevalence.html&gt;</span></span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">ℹ</span> Reading information from</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span>   <span style="color: #0000BB; font-style: italic;">&lt;https://darwin-eu.github.io/DrugExposureDiagnostics/&gt;</span></span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">ℹ</span> Reading information from</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span>   <span style="color: #0000BB; font-style: italic;">&lt;https://darwin-eu.github.io/DrugExposureDiagnostics/articles/DaysSupply.html&gt;</span></span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">ℹ</span> Reading information from</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span>   <span style="color: #0000BB; font-style: italic;">&lt;https://darwin-eu.github.io/DrugExposureDiagnostics/articles/DiagnosticsSummary.html&gt;</span></span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">ℹ</span> Reading information from</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span>   <span style="color: #0000BB; font-style: italic;">&lt;https://darwin-eu.github.io/DrugExposureDiagnostics/articles/DrugDose.html&gt;</span></span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">ℹ</span> Reading information from</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span>   <span style="color: #0000BB; font-style: italic;">&lt;https://darwin-eu.github.io/DrugExposureDiagnostics/articles/DrugDuration.html&gt;</span></span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">ℹ</span> Reading information from</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span>   <span style="color: #0000BB; font-style: italic;">&lt;https://darwin-eu.github.io/DrugExposureDiagnostics/articles/DrugSig.html&gt;</span></span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">ℹ</span> Reading information from</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span>   <span style="color: #0000BB; font-style: italic;">&lt;https://darwin-eu.github.io/DrugExposureDiagnostics/articles/DrugSourceConcepts.html&gt;</span></span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">ℹ</span> Reading information from</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span>   <span style="color: #0000BB; font-style: italic;">&lt;https://darwin-eu.github.io/DrugExposureDiagnostics/articles/DrugTypes.html&gt;</span></span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">ℹ</span> Reading information from</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span>   <span style="color: #0000BB; font-style: italic;">&lt;https://darwin-eu.github.io/DrugExposureDiagnostics/articles/IntroductionToDrugExposureDiagnostics.html&gt;</span></span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">ℹ</span> Reading information from</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span>   <span style="color: #0000BB; font-style: italic;">&lt;https://darwin-eu.github.io/DrugExposureDiagnostics/articles/Missingness.html&gt;</span></span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">ℹ</span> Reading information from</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span>   <span style="color: #0000BB; font-style: italic;">&lt;https://darwin-eu.github.io/DrugExposureDiagnostics/articles/Quantity.html&gt;</span></span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">ℹ</span> Reading information from</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span>   <span style="color: #0000BB; font-style: italic;">&lt;https://darwin-eu.github.io/DrugExposureDiagnostics/articles/Routes.html&gt;</span></span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">ℹ</span> Reading information from</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span>   <span style="color: #0000BB; font-style: italic;">&lt;https://darwin-eu.github.io/DrugExposureDiagnostics/articles/VerbatimEndDate.html&gt;</span></span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">ℹ</span> Reading information from</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span>   <span style="color: #0000BB; font-style: italic;">&lt;https://darwin-eu.github.io/DrugExposureDiagnostics/authors.html&gt;</span></span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">ℹ</span> Reading information from</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span>   <span style="color: #0000BB; font-style: italic;">&lt;https://darwin-eu.github.io/DrugExposureDiagnostics/index.html&gt;</span></span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">ℹ</span> Reading information from</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span>   <span style="color: #0000BB; font-style: italic;">&lt;https://darwin-eu.github.io/DrugExposureDiagnostics/news/index.html&gt;</span></span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">ℹ</span> Reading information from</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span>   <span style="color: #0000BB; font-style: italic;">&lt;https://darwin-eu.github.io/DrugExposureDiagnostics/reference/executeChecks.html&gt;</span></span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">ℹ</span> Reading information from</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span>   <span style="color: #0000BB; font-style: italic;">&lt;https://darwin-eu.github.io/DrugExposureDiagnostics/reference/index.html&gt;</span></span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">ℹ</span> Reading information from</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span>   <span style="color: #0000BB; font-style: italic;">&lt;https://darwin-eu.github.io/DrugExposureDiagnostics/reference/mockDrugExposure.html&gt;</span></span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">ℹ</span> Reading information from</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span>   <span style="color: #0000BB; font-style: italic;">&lt;https://darwin-eu.github.io/DrugExposureDiagnostics/reference/pipe.html&gt;</span></span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">ℹ</span> Reading information from</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span>   <span style="color: #0000BB; font-style: italic;">&lt;https://darwin-eu.github.io/DrugExposureDiagnostics/reference/writeResultToDisk.html&gt;</span></span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">ℹ</span> Reading information from <span style="color: #0000BB; font-style: italic;">&lt;https://ohdsi.github.io/MeasurementDiagnostics/&gt;</span></span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">ℹ</span> Reading information from</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span>   <span style="color: #0000BB; font-style: italic;">&lt;https://ohdsi.github.io/MeasurementDiagnostics/articles/summariseMeasurementUse.html&gt;</span></span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">ℹ</span> Reading information from</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span>   <span style="color: #0000BB; font-style: italic;">&lt;https://ohdsi.github.io/MeasurementDiagnostics/authors.html&gt;</span></span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">ℹ</span> Reading information from</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span>   <span style="color: #0000BB; font-style: italic;">&lt;https://ohdsi.github.io/MeasurementDiagnostics/index.html&gt;</span></span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">ℹ</span> Reading information from</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span>   <span style="color: #0000BB; font-style: italic;">&lt;https://ohdsi.github.io/MeasurementDiagnostics/reference/index.html&gt;</span></span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">ℹ</span> Reading information from</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span>   <span style="color: #0000BB; font-style: italic;">&lt;https://ohdsi.github.io/MeasurementDiagnostics/reference/plotMeasurementTimings.html&gt;</span></span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">ℹ</span> Reading information from</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span>   <span style="color: #0000BB; font-style: italic;">&lt;https://ohdsi.github.io/MeasurementDiagnostics/reference/summariseMeasurementUse.html&gt;</span></span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">ℹ</span> Reading information from <span style="color: #0000BB; font-style: italic;">&lt;https://darwin-eu.github.io/PatientProfiles/&gt;</span></span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">ℹ</span> Reading information from</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span>   <span style="color: #0000BB; font-style: italic;">&lt;https://darwin-eu.github.io/PatientProfiles/articles/cohort-intersect.html&gt;</span></span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">ℹ</span> Reading information from</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span>   <span style="color: #0000BB; font-style: italic;">&lt;https://darwin-eu.github.io/PatientProfiles/articles/concept-intersect.html&gt;</span></span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">ℹ</span> Reading information from</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span>   <span style="color: #0000BB; font-style: italic;">&lt;https://darwin-eu.github.io/PatientProfiles/articles/demographics.html&gt;</span></span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">ℹ</span> Reading information from</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span>   <span style="color: #0000BB; font-style: italic;">&lt;https://darwin-eu.github.io/PatientProfiles/articles/summarise.html&gt;</span></span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">ℹ</span> Reading information from</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span>   <span style="color: #0000BB; font-style: italic;">&lt;https://darwin-eu.github.io/PatientProfiles/articles/table-intersect.html&gt;</span></span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">ℹ</span> Reading information from</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span>   <span style="color: #0000BB; font-style: italic;">&lt;https://darwin-eu.github.io/PatientProfiles/authors.html&gt;</span></span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">ℹ</span> Reading information from</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span>   <span style="color: #0000BB; font-style: italic;">&lt;https://darwin-eu.github.io/PatientProfiles/index.html&gt;</span></span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">ℹ</span> Reading information from</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span>   <span style="color: #0000BB; font-style: italic;">&lt;https://darwin-eu.github.io/PatientProfiles/news/index.html&gt;</span></span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">ℹ</span> Reading information from</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span>   <span style="color: #0000BB; font-style: italic;">&lt;https://darwin-eu.github.io/PatientProfiles/reference/addAge.html&gt;</span></span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">ℹ</span> Reading information from</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span>   <span style="color: #0000BB; font-style: italic;">&lt;https://darwin-eu.github.io/PatientProfiles/reference/addCohortIntersectCount.html&gt;</span></span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">ℹ</span> Reading information from</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span>   <span style="color: #0000BB; font-style: italic;">&lt;https://darwin-eu.github.io/PatientProfiles/reference/addCohortIntersectDate.html&gt;</span></span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">ℹ</span> Reading information from</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span>   <span style="color: #0000BB; font-style: italic;">&lt;https://darwin-eu.github.io/PatientProfiles/reference/addCohortIntersectDays.html&gt;</span></span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">ℹ</span> Reading information from</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span>   <span style="color: #0000BB; font-style: italic;">&lt;https://darwin-eu.github.io/PatientProfiles/reference/addCohortIntersectFlag.html&gt;</span></span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">ℹ</span> Reading information from</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span>   <span style="color: #0000BB; font-style: italic;">&lt;https://darwin-eu.github.io/PatientProfiles/reference/addPriorObservation.html&gt;</span></span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">ℹ</span> Reading information from</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span>   <span style="color: #0000BB; font-style: italic;">&lt;https://darwin-eu.github.io/PatientProfiles/reference/addSex.html&gt;</span></span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">ℹ</span> Reading information from</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span>   <span style="color: #0000BB; font-style: italic;">&lt;https://darwin-eu.github.io/PatientProfiles/reference/index.html&gt;</span></span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">ℹ</span> Reading information from</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span>   <span style="color: #0000BB; font-style: italic;">&lt;https://darwin-eu.github.io/PatientProfiles/reference/mockDisconnect.html&gt;</span></span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">ℹ</span> Reading information from</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span>   <span style="color: #0000BB; font-style: italic;">&lt;https://darwin-eu.github.io/PatientProfiles/reference/mockPatientProfiles.html&gt;</span></span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">ℹ</span> Reading information from <span style="color: #0000BB; font-style: italic;">&lt;https://darwin-eu.github.io/CohortCharacteristics/&gt;</span></span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">ℹ</span> Reading information from</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span>   <span style="color: #0000BB; font-style: italic;">&lt;https://darwin-eu.github.io/CohortCharacteristics/articles/summarise_characteristics.html&gt;</span></span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">ℹ</span> Reading information from</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span>   <span style="color: #0000BB; font-style: italic;">&lt;https://darwin-eu.github.io/CohortCharacteristics/articles/summarise_cohort_entries.html&gt;</span></span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">ℹ</span> Reading information from</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span>   <span style="color: #0000BB; font-style: italic;">&lt;https://darwin-eu.github.io/CohortCharacteristics/articles/summarise_cohort_overlap.html&gt;</span></span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">ℹ</span> Reading information from</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span>   <span style="color: #0000BB; font-style: italic;">&lt;https://darwin-eu.github.io/CohortCharacteristics/articles/summarise_cohort_timing.html&gt;</span></span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">ℹ</span> Reading information from</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span>   <span style="color: #0000BB; font-style: italic;">&lt;https://darwin-eu.github.io/CohortCharacteristics/articles/summarise_large_scale_characteristics.html&gt;</span></span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">ℹ</span> Reading information from</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span>   <span style="color: #0000BB; font-style: italic;">&lt;https://darwin-eu.github.io/CohortCharacteristics/authors.html&gt;</span></span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">ℹ</span> Reading information from</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span>   <span style="color: #0000BB; font-style: italic;">&lt;https://darwin-eu.github.io/CohortCharacteristics/index.html&gt;</span></span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">ℹ</span> Reading information from</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span>   <span style="color: #0000BB; font-style: italic;">&lt;https://darwin-eu.github.io/CohortCharacteristics/news/index.html&gt;</span></span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">ℹ</span> Reading information from</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span>   <span style="color: #0000BB; font-style: italic;">&lt;https://darwin-eu.github.io/CohortCharacteristics/reference/index.html&gt;</span></span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">ℹ</span> Reading information from</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span>   <span style="color: #0000BB; font-style: italic;">&lt;https://darwin-eu.github.io/CohortCharacteristics/reference/mockCohortCharacteristics.html&gt;</span></span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">ℹ</span> Reading information from</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span>   <span style="color: #0000BB; font-style: italic;">&lt;https://darwin-eu.github.io/CohortCharacteristics/reference/plotCharacteristics.html&gt;</span></span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">ℹ</span> Reading information from</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span>   <span style="color: #0000BB; font-style: italic;">&lt;https://darwin-eu.github.io/CohortCharacteristics/reference/plotCohortAttrition.html&gt;</span></span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">ℹ</span> Reading information from</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span>   <span style="color: #0000BB; font-style: italic;">&lt;https://darwin-eu.github.io/CohortCharacteristics/reference/plotCohortCount.html&gt;</span></span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">ℹ</span> Reading information from</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span>   <span style="color: #0000BB; font-style: italic;">&lt;https://darwin-eu.github.io/CohortCharacteristics/reference/plotCohortOverlap.html&gt;</span></span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">ℹ</span> Reading information from</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span>   <span style="color: #0000BB; font-style: italic;">&lt;https://darwin-eu.github.io/CohortCharacteristics/reference/plotCohortTiming.html&gt;</span></span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">ℹ</span> Reading information from</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span>   <span style="color: #0000BB; font-style: italic;">&lt;https://darwin-eu.github.io/CohortCharacteristics/reference/plotComparedLargeScaleCharacteristics.html&gt;</span></span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">ℹ</span> Reading information from</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span>   <span style="color: #0000BB; font-style: italic;">&lt;https://darwin-eu.github.io/CohortCharacteristics/reference/plotLargeScaleCharacteristics.html&gt;</span></span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">ℹ</span> Reading information from</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span>   <span style="color: #0000BB; font-style: italic;">&lt;https://darwin-eu.github.io/CohortCharacteristics/reference/summariseCharacteristics.html&gt;</span></span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">ℹ</span> Reading information from</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span>   <span style="color: #0000BB; font-style: italic;">&lt;https://darwin-eu.github.io/CohortCharacteristics/reference/summariseCohortAttrition.html&gt;</span></span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">ℹ</span> Reading information from</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span>   <span style="color: #0000BB; font-style: italic;">&lt;https://darwin-eu.github.io/CohortCharacteristics/reference/summariseCohortCount.html&gt;</span></span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">ℹ</span> Reading information from</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span>   <span style="color: #0000BB; font-style: italic;">&lt;https://darwin-eu.github.io/CohortCharacteristics/reference/summariseCohortOverlap.html&gt;</span></span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">ℹ</span> Reading information from</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span>   <span style="color: #0000BB; font-style: italic;">&lt;https://darwin-eu.github.io/CohortCharacteristics/reference/summariseCohortTiming.html&gt;</span></span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">ℹ</span> Reading information from</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span>   <span style="color: #0000BB; font-style: italic;">&lt;https://darwin-eu.github.io/CohortCharacteristics/reference/summariseLargeScaleCharacteristics.html&gt;</span></span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">ℹ</span> Reading information from</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span>   <span style="color: #0000BB; font-style: italic;">&lt;https://darwin-eu.github.io/CohortCharacteristics/reference/tableCharacteristics.html&gt;</span></span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">ℹ</span> Reading information from</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span>   <span style="color: #0000BB; font-style: italic;">&lt;https://darwin-eu.github.io/CohortCharacteristics/reference/tableCohortAttrition.html&gt;</span></span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">ℹ</span> Reading information from</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span>   <span style="color: #0000BB; font-style: italic;">&lt;https://darwin-eu.github.io/CohortCharacteristics/reference/tableCohortCount.html&gt;</span></span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">ℹ</span> Reading information from</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span>   <span style="color: #0000BB; font-style: italic;">&lt;https://darwin-eu.github.io/CohortCharacteristics/reference/tableCohortOverlap.html&gt;</span></span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">ℹ</span> Reading information from</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span>   <span style="color: #0000BB; font-style: italic;">&lt;https://darwin-eu.github.io/CohortCharacteristics/reference/tableCohortTiming.html&gt;</span></span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">ℹ</span> Reading information from</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span>   <span style="color: #0000BB; font-style: italic;">&lt;https://darwin-eu.github.io/CohortCharacteristics/reference/tableTopLargeScaleCharacteristics.html&gt;</span></span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">ℹ</span> Reading information from <span style="color: #0000BB; font-style: italic;">&lt;https://OHDSI.github.io/OmopSketch/&gt;</span></span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">ℹ</span> Reading information from</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span>   <span style="color: #0000BB; font-style: italic;">&lt;https://OHDSI.github.io/OmopSketch/articles/characterisation.html&gt;</span></span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">ℹ</span> Reading information from</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span>   <span style="color: #0000BB; font-style: italic;">&lt;https://OHDSI.github.io/OmopSketch/articles/database_characteristics.html&gt;</span></span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">ℹ</span> Reading information from</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span>   <span style="color: #0000BB; font-style: italic;">&lt;https://OHDSI.github.io/OmopSketch/articles/missing_data.html&gt;</span></span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">ℹ</span> Reading information from</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span>   <span style="color: #0000BB; font-style: italic;">&lt;https://OHDSI.github.io/OmopSketch/articles/summarise_clinical_tables_records.html&gt;</span></span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">ℹ</span> Reading information from</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span>   <span style="color: #0000BB; font-style: italic;">&lt;https://OHDSI.github.io/OmopSketch/articles/summarise_concept_id_counts.html&gt;</span></span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">ℹ</span> Reading information from</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span>   <span style="color: #0000BB; font-style: italic;">&lt;https://OHDSI.github.io/OmopSketch/articles/summarise_observation_period.html&gt;</span></span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">ℹ</span> Reading information from <span style="color: #0000BB; font-style: italic;">&lt;https://OHDSI.github.io/OmopSketch/authors.html&gt;</span></span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">ℹ</span> Reading information from <span style="color: #0000BB; font-style: italic;">&lt;https://OHDSI.github.io/OmopSketch/index.html&gt;</span></span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">ℹ</span> Reading information from <span style="color: #0000BB; font-style: italic;">&lt;https://OHDSI.github.io/OmopSketch/news/index.html&gt;</span></span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">ℹ</span> Reading information from</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span>   <span style="color: #0000BB; font-style: italic;">&lt;https://OHDSI.github.io/OmopSketch/reference/index.html&gt;</span></span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">ℹ</span> Reading information from</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span>   <span style="color: #0000BB; font-style: italic;">&lt;https://OHDSI.github.io/OmopSketch/reference/plotConceptSetCounts.html&gt;</span></span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">ℹ</span> Reading information from</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span>   <span style="color: #0000BB; font-style: italic;">&lt;https://OHDSI.github.io/OmopSketch/reference/plotInObservation.html&gt;</span></span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">ℹ</span> Reading information from</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span>   <span style="color: #0000BB; font-style: italic;">&lt;https://OHDSI.github.io/OmopSketch/reference/plotObservationPeriod.html&gt;</span></span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">ℹ</span> Reading information from</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span>   <span style="color: #0000BB; font-style: italic;">&lt;https://OHDSI.github.io/OmopSketch/reference/plotRecordCount.html&gt;</span></span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">ℹ</span> Reading information from</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span>   <span style="color: #0000BB; font-style: italic;">&lt;https://OHDSI.github.io/OmopSketch/reference/summariseClinicalRecords.html&gt;</span></span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">ℹ</span> Reading information from</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span>   <span style="color: #0000BB; font-style: italic;">&lt;https://OHDSI.github.io/OmopSketch/reference/summariseConceptSetCounts.html&gt;</span></span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">ℹ</span> Reading information from</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span>   <span style="color: #0000BB; font-style: italic;">&lt;https://OHDSI.github.io/OmopSketch/reference/summariseInObservation.html&gt;</span></span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">ℹ</span> Reading information from</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span>   <span style="color: #0000BB; font-style: italic;">&lt;https://OHDSI.github.io/OmopSketch/reference/summariseObservationPeriod.html&gt;</span></span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">ℹ</span> Reading information from</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span>   <span style="color: #0000BB; font-style: italic;">&lt;https://OHDSI.github.io/OmopSketch/reference/summariseOmopSnapshot.html&gt;</span></span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">ℹ</span> Reading information from</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span>   <span style="color: #0000BB; font-style: italic;">&lt;https://OHDSI.github.io/OmopSketch/reference/summariseRecordCount.html&gt;</span></span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">ℹ</span> Reading information from</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span>   <span style="color: #0000BB; font-style: italic;">&lt;https://OHDSI.github.io/OmopSketch/reference/tableClinicalRecords.html&gt;</span></span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">ℹ</span> Reading information from</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span>   <span style="color: #0000BB; font-style: italic;">&lt;https://OHDSI.github.io/OmopSketch/reference/tableObservationPeriod.html&gt;</span></span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">ℹ</span> Reading information from</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span>   <span style="color: #0000BB; font-style: italic;">&lt;https://OHDSI.github.io/OmopSketch/reference/tableOmopSnapshot.html&gt;</span></span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">ℹ</span> Reading information from <span style="color: #0000BB; font-style: italic;">&lt;https://darwin-eu.github.io/CodelistGenerator/&gt;</span></span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">ℹ</span> Reading information from</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span>   <span style="color: #0000BB; font-style: italic;">&lt;https://darwin-eu.github.io/CodelistGenerator/articles/a01_GettingOmopCdmVocabularies.html&gt;</span></span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">ℹ</span> Reading information from</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span>   <span style="color: #0000BB; font-style: italic;">&lt;https://darwin-eu.github.io/CodelistGenerator/articles/a02_ExploreCDMvocabulary.html&gt;</span></span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">ℹ</span> Reading information from</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span>   <span style="color: #0000BB; font-style: italic;">&lt;https://darwin-eu.github.io/CodelistGenerator/articles/a03_GenerateCandidateCodelist.html&gt;</span></span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">ℹ</span> Reading information from</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span>   <span style="color: #0000BB; font-style: italic;">&lt;https://darwin-eu.github.io/CodelistGenerator/articles/a04_GenerateVocabularyBasedCodelist.html&gt;</span></span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">ℹ</span> Reading information from</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span>   <span style="color: #0000BB; font-style: italic;">&lt;https://darwin-eu.github.io/CodelistGenerator/articles/a04b_icd_codes.html&gt;</span></span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">ℹ</span> Reading information from</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span>   <span style="color: #0000BB; font-style: italic;">&lt;https://darwin-eu.github.io/CodelistGenerator/articles/a05_ExtractCodelistFromJSONfile.html&gt;</span></span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">ℹ</span> Reading information from</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span>   <span style="color: #0000BB; font-style: italic;">&lt;https://darwin-eu.github.io/CodelistGenerator/articles/a06_CreateSubsetsFromCodelist.html&gt;</span></span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">ℹ</span> Reading information from</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span>   <span style="color: #0000BB; font-style: italic;">&lt;https://darwin-eu.github.io/CodelistGenerator/articles/a07_RunCodelistDiagnostics.html&gt;</span></span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">ℹ</span> Reading information from</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span>   <span style="color: #0000BB; font-style: italic;">&lt;https://darwin-eu.github.io/CodelistGenerator/authors.html&gt;</span></span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">ℹ</span> Reading information from</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span>   <span style="color: #0000BB; font-style: italic;">&lt;https://darwin-eu.github.io/CodelistGenerator/index.html&gt;</span></span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">ℹ</span> Reading information from</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span>   <span style="color: #0000BB; font-style: italic;">&lt;https://darwin-eu.github.io/CodelistGenerator/news/index.html&gt;</span></span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">ℹ</span> Reading information from</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span>   <span style="color: #0000BB; font-style: italic;">&lt;https://darwin-eu.github.io/CodelistGenerator/reference/getCandidateCodes.html&gt;</span></span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">ℹ</span> Reading information from</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span>   <span style="color: #0000BB; font-style: italic;">&lt;https://darwin-eu.github.io/CodelistGenerator/reference/getDrugIngredientCodes.html&gt;</span></span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">ℹ</span> Reading information from</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span>   <span style="color: #0000BB; font-style: italic;">&lt;https://darwin-eu.github.io/CodelistGenerator/reference/getVocabVersion.html&gt;</span></span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">ℹ</span> Reading information from</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span>   <span style="color: #0000BB; font-style: italic;">&lt;https://darwin-eu.github.io/CodelistGenerator/reference/index.html&gt;</span></span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">ℹ</span> Reading information from</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span>   <span style="color: #0000BB; font-style: italic;">&lt;https://darwin-eu.github.io/CodelistGenerator/reference/summariseCodeUse.html&gt;</span></span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">ℹ</span> Reading information from</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span>   <span style="color: #0000BB; font-style: italic;">&lt;https://darwin-eu.github.io/CodelistGenerator/reference/tableCodeUse.html&gt;</span></span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">ℹ</span> Reading information from <span style="color: #0000BB; font-style: italic;">&lt;https://darwin-eu-dev.github.io/CohortSurvival/&gt;</span></span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">ℹ</span> Reading information from</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span>   <span style="color: #0000BB; font-style: italic;">&lt;https://darwin-eu-dev.github.io/CohortSurvival/articles/a01_Single_event_of_interest.html&gt;</span></span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">ℹ</span> Reading information from</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span>   <span style="color: #0000BB; font-style: italic;">&lt;https://darwin-eu-dev.github.io/CohortSurvival/articles/a02_Competing_risk_survival.html&gt;</span></span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">ℹ</span> Reading information from</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span>   <span style="color: #0000BB; font-style: italic;">&lt;https://darwin-eu-dev.github.io/CohortSurvival/articles/a03_Further_survival_analyses.html&gt;</span></span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">ℹ</span> Reading information from</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span>   <span style="color: #0000BB; font-style: italic;">&lt;https://darwin-eu-dev.github.io/CohortSurvival/authors.html&gt;</span></span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">ℹ</span> Reading information from</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span>   <span style="color: #0000BB; font-style: italic;">&lt;https://darwin-eu-dev.github.io/CohortSurvival/index.html&gt;</span></span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">ℹ</span> Reading information from</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span>   <span style="color: #0000BB; font-style: italic;">&lt;https://darwin-eu-dev.github.io/CohortSurvival/news/index.html&gt;</span></span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">ℹ</span> Reading information from</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span>   <span style="color: #0000BB; font-style: italic;">&lt;https://darwin-eu-dev.github.io/CohortSurvival/reference/estimateCompetingRiskSurvival.html&gt;</span></span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">ℹ</span> Reading information from</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span>   <span style="color: #0000BB; font-style: italic;">&lt;https://darwin-eu-dev.github.io/CohortSurvival/reference/estimateSingleEventSurvival.html&gt;</span></span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">ℹ</span> Reading information from</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span>   <span style="color: #0000BB; font-style: italic;">&lt;https://darwin-eu-dev.github.io/CohortSurvival/reference/index.html&gt;</span></span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">ℹ</span> Reading information from</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span>   <span style="color: #0000BB; font-style: italic;">&lt;https://darwin-eu-dev.github.io/CohortSurvival/reference/mockMGUS2cdm.html&gt;</span></span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">ℹ</span> Reading information from</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span>   <span style="color: #0000BB; font-style: italic;">&lt;https://darwin-eu-dev.github.io/CohortSurvival/reference/pipe.html&gt;</span></span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">ℹ</span> Reading information from</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span>   <span style="color: #0000BB; font-style: italic;">&lt;https://darwin-eu-dev.github.io/CohortSurvival/reference/plotSurvival.html&gt;</span></span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">ℹ</span> Reading information from</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span>   <span style="color: #0000BB; font-style: italic;">&lt;https://darwin-eu-dev.github.io/CohortSurvival/reference/tableSurvival.html&gt;</span></span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">ℹ</span> Reading information from <span style="color: #0000BB; font-style: italic;">&lt;https://ohdsi.github.io/omock/&gt;</span></span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">ℹ</span> Reading information from</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span>   <span style="color: #0000BB; font-style: italic;">&lt;https://ohdsi.github.io/omock/articles/a01_Creating_synthetic_clinical_tables.html&gt;</span></span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">ℹ</span> Reading information from</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span>   <span style="color: #0000BB; font-style: italic;">&lt;https://ohdsi.github.io/omock/articles/a02_Creating_synthetic_cohorts.html&gt;</span></span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">ℹ</span> Reading information from</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span>   <span style="color: #0000BB; font-style: italic;">&lt;https://ohdsi.github.io/omock/articles/a03_Creating_a_synthetic_vocabulary.html&gt;</span></span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">ℹ</span> Reading information from</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span>   <span style="color: #0000BB; font-style: italic;">&lt;https://ohdsi.github.io/omock/articles/a04_Building_a_bespoke_mock_cdm.html&gt;</span></span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">ℹ</span> Reading information from <span style="color: #0000BB; font-style: italic;">&lt;https://ohdsi.github.io/omock/authors.html&gt;</span></span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">ℹ</span> Reading information from <span style="color: #0000BB; font-style: italic;">&lt;https://ohdsi.github.io/omock/index.html&gt;</span></span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">ℹ</span> Reading information from <span style="color: #0000BB; font-style: italic;">&lt;https://ohdsi.github.io/omock/news/index.html&gt;</span></span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">ℹ</span> Reading information from <span style="color: #0000BB; font-style: italic;">&lt;https://ohdsi.github.io/omock/reference/index.html&gt;</span></span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">ℹ</span> Reading information from</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span>   <span style="color: #0000BB; font-style: italic;">&lt;https://ohdsi.github.io/omock/reference/mockObservationPeriod.html&gt;</span></span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">ℹ</span> Reading information from</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span>   <span style="color: #0000BB; font-style: italic;">&lt;https://ohdsi.github.io/omock/reference/mockPerson.html&gt;</span></span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BB00;">✔</span> Information retrieved from 294 links.</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">ℹ</span> Embeding retrieved information.</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> ⠙ 1/294 ETA:  2h | Embeding </span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> ⠹ 2/294 ETA:  6h | Embeding </span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> ⠸ 3/294 ETA:  8h | Embeding </span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> ⠼ 4/294 ETA:  7h | Embeding </span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> ⠴ 5/294 ETA:  9h | Embeding </span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> ⠦ 6/294 ETA:  8h | Embeding </span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> ⠧ 7/294 ETA:  7h | Embeding </span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> ⠇ 8/294 ETA:  6h | Embeding </span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> ⠏ 9/294 ETA:  9h | Embeding </span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> ⠋ 10/294 ETA:  9h | Embeding </span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> ⠙ 11/294 ETA:  8h | Embeding </span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> ⠹ 12/294 ETA:  8h | Embeding </span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> ⠸ 13/294 ETA:  8h | Embeding </span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> ⠼ 14/294 ETA:  8h | Embeding </span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> ⠴ 15/294 ETA:  8h | Embeding </span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> ⠦ 16/294 ETA:  8h | Embeding </span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> ⠧ 17/294 ETA:  8h | Embeding </span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> ⠇ 18/294 ETA:  7h | Embeding </span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> ⠏ 19/294 ETA:  7h | Embeding </span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> ⠋ 20/294 ETA:  7h | Embeding </span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> ⠙ 21/294 ETA:  7h | Embeding </span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> ⠹ 22/294 ETA:  6h | Embeding </span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> ⠸ 23/294 ETA:  6h | Embeding </span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> ⠼ 24/294 ETA:  6h | Embeding </span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> ⠴ 25/294 ETA:  6h | Embeding </span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> ⠦ 27/294 ETA:  5h | Embeding </span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> ⠧ 28/294 ETA:  5h | Embeding </span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> ⠇ 29/294 ETA:  5h | Embeding </span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> ⠏ 30/294 ETA:  5h | Embeding </span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> ⠋ 31/294 ETA:  5h | Embeding </span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> ⠙ 32/294 ETA:  5h | Embeding </span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> ⠹ 33/294 ETA:  5h | Embeding </span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> ⠸ 34/294 ETA:  5h | Embeding </span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> ⠼ 35/294 ETA:  5h | Embeding </span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> ⠴ 36/294 ETA:  5h | Embeding </span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> ⠦ 37/294 ETA:  5h | Embeding </span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> ⠧ 38/294 ETA:  5h | Embeding </span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> ⠇ 39/294 ETA:  5h | Embeding </span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> ⠏ 41/294 ETA:  4h | Embeding </span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> ⠋ 42/294 ETA:  4h | Embeding </span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> ⠙ 43/294 ETA:  4h | Embeding </span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> ⠹ 45/294 ETA:  4h | Embeding </span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> ⠸ 47/294 ETA:  4h | Embeding </span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> ⠼ 49/294 ETA:  4h | Embeding </span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> ⠴ 50/294 ETA:  4h | Embeding </span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> ⠦ 51/294 ETA:  4h | Embeding </span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> ⠧ 52/294 ETA:  4h | Embeding </span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> ⠇ 53/294 ETA:  3h | Embeding </span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> ⠏ 54/294 ETA:  4h | Embeding </span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> ⠋ 55/294 ETA:  4h | Embeding </span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> ⠙ 56/294 ETA:  3h | Embeding </span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> ⠹ 57/294 ETA:  3h | Embeding </span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> ⠸ 58/294 ETA:  3h | Embeding </span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> ⠼ 59/294 ETA:  3h | Embeding </span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> ⠴ 60/294 ETA:  3h | Embeding </span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> ⠦ 61/294 ETA:  3h | Embeding </span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> ⠧ 62/294 ETA:  3h | Embeding </span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> ⠇ 63/294 ETA:  3h | Embeding </span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> ⠏ 64/294 ETA:  3h | Embeding </span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> ⠋ 65/294 ETA:  3h | Embeding </span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> ⠙ 66/294 ETA:  3h | Embeding </span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> ⠹ 67/294 ETA:  3h | Embeding </span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> ⠸ 69/294 ETA:  3h | Embeding </span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> ⠼ 70/294 ETA:  3h | Embeding </span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> ⠴ 71/294 ETA:  3h | Embeding </span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> ⠦ 72/294 ETA:  3h | Embeding </span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> ⠧ 73/294 ETA:  3h | Embeding </span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> ⠇ 74/294 ETA:  3h | Embeding </span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> ⠏ 75/294 ETA:  3h | Embeding </span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> ⠋ 76/294 ETA:  3h | Embeding </span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> ⠙ 77/294 ETA:  3h | Embeding </span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> ⠹ 78/294 ETA:  3h | Embeding </span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> ⠸ 79/294 ETA:  3h | Embeding </span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> ⠼ 80/294 ETA:  3h | Embeding </span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> ⠴ 81/294 ETA:  3h | Embeding </span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> ⠦ 82/294 ETA:  3h | Embeding </span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> ⠧ 83/294 ETA:  3h | Embeding </span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> ⠇ 84/294 ETA:  3h | Embeding </span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> ⠏ 85/294 ETA:  3h | Embeding </span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> ⠋ 86/294 ETA:  3h | Embeding </span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> ⠙ 87/294 ETA:  3h | Embeding </span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> ⠹ 88/294 ETA:  3h | Embeding </span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> ⠸ 89/294 ETA:  3h | Embeding </span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> ⠼ 90/294 ETA:  3h | Embeding </span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> ⠴ 91/294 ETA:  3h | Embeding </span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> ⠦ 92/294 ETA:  3h | Embeding </span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> ⠧ 93/294 ETA:  3h | Embeding </span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> ⠇ 94/294 ETA:  3h | Embeding </span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> ⠏ 95/294 ETA:  3h | Embeding </span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> ⠋ 96/294 ETA:  3h | Embeding </span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> ⠙ 98/294 ETA:  3h | Embeding </span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> ⠹ 99/294 ETA:  3h | Embeding </span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> ⠸ 100/294 ETA:  3h | Embeding </span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> ⠼ 101/294 ETA:  3h | Embeding </span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> ⠴ 102/294 ETA:  2h | Embeding </span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> ⠦ 103/294 ETA:  2h | Embeding </span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> ⠧ 104/294 ETA:  2h | Embeding </span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> ⠇ 105/294 ETA:  2h | Embeding </span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> ⠏ 106/294 ETA:  2h | Embeding </span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> ⠋ 108/294 ETA:  2h | Embeding </span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> ⠙ 109/294 ETA:  2h | Embeding </span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> ⠹ 110/294 ETA:  2h | Embeding </span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> ⠸ 111/294 ETA:  2h | Embeding </span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> ⠼ 113/294 ETA:  2h | Embeding </span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> ⠴ 114/294 ETA:  2h | Embeding </span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> ⠦ 115/294 ETA:  2h | Embeding </span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> ⠧ 116/294 ETA:  2h | Embeding </span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> ⠇ 117/294 ETA:  3h | Embeding </span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> ⠏ 118/294 ETA:  3h | Embeding </span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> ⠋ 119/294 ETA:  3h | Embeding </span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> ⠙ 120/294 ETA:  3h | Embeding </span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> ⠹ 121/294 ETA:  2h | Embeding </span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> ⠸ 122/294 ETA:  2h | Embeding </span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> ⠼ 123/294 ETA:  2h | Embeding </span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> ⠴ 124/294 ETA:  2h | Embeding </span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> ⠦ 125/294 ETA:  2h | Embeding </span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> ⠧ 126/294 ETA:  2h | Embeding </span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> ⠇ 127/294 ETA:  2h | Embeding </span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> ⠏ 128/294 ETA:  2h | Embeding </span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> ⠋ 129/294 ETA:  2h | Embeding </span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> ⠙ 130/294 ETA:  2h | Embeding </span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> ⠹ 131/294 ETA:  2h | Embeding </span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> ⠸ 132/294 ETA:  2h | Embeding </span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> ⠼ 133/294 ETA:  2h | Embeding </span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> ⠴ 134/294 ETA:  2h | Embeding </span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> ⠦ 135/294 ETA:  2h | Embeding </span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> ⠧ 136/294 ETA:  2h | Embeding </span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> ⠇ 137/294 ETA:  2h | Embeding </span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> ⠏ 138/294 ETA:  2h | Embeding </span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> ⠋ 139/294 ETA:  2h | Embeding </span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> ⠙ 140/294 ETA:  2h | Embeding </span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> ⠹ 141/294 ETA:  2h | Embeding </span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> ⠸ 142/294 ETA:  2h | Embeding </span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> ⠼ 143/294 ETA:  2h | Embeding </span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> ⠴ 144/294 ETA:  2h | Embeding </span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> ⠦ 145/294 ETA:  2h | Embeding </span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> ⠧ 146/294 ETA:  2h | Embeding </span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> ⠇ 147/294 ETA:  2h | Embeding </span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> ⠏ 148/294 ETA:  2h | Embeding </span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> ⠋ 149/294 ETA:  2h | Embeding </span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> ⠙ 150/294 ETA:  2h | Embeding </span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> ⠹ 151/294 ETA:  2h | Embeding </span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> ⠸ 152/294 ETA:  2h | Embeding </span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> ⠼ 153/294 ETA:  2h | Embeding </span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> ⠴ 154/294 ETA:  2h | Embeding </span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> ⠦ 155/294 ETA:  2h | Embeding </span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> ⠧ 156/294 ETA:  2h | Embeding </span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> ⠇ 157/294 ETA:  2h | Embeding </span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> ⠏ 158/294 ETA:  2h | Embeding </span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> ⠋ 159/294 ETA:  2h | Embeding </span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> ⠙ 160/294 ETA:  2h | Embeding </span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> ⠹ 161/294 ETA:  2h | Embeding </span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> ⠸ 162/294 ETA:  2h | Embeding </span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> ⠼ 163/294 ETA:  2h | Embeding </span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> ⠴ 164/294 ETA:  2h | Embeding </span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> ⠦ 165/294 ETA:  2h | Embeding </span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> ⠧ 166/294 ETA:  2h | Embeding </span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> ⠇ 167/294 ETA:  2h | Embeding </span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> ⠏ 168/294 ETA:  2h | Embeding </span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> ⠋ 169/294 ETA:  2h | Embeding </span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> ⠙ 170/294 ETA:  2h | Embeding </span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> ⠹ 171/294 ETA:  2h | Embeding </span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> ⠸ 172/294 ETA:  2h | Embeding </span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> ⠼ 173/294 ETA:  2h | Embeding </span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> ⠴ 174/294 ETA:  2h | Embeding </span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> ⠦ 175/294 ETA:  2h | Embeding </span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> ⠧ 176/294 ETA:  1h | Embeding </span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> ⠇ 177/294 ETA:  1h | Embeding </span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> ⠏ 178/294 ETA:  1h | Embeding </span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> ⠋ 179/294 ETA:  1h | Embeding </span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> ⠙ 180/294 ETA:  1h | Embeding </span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> ⠹ 181/294 ETA:  1h | Embeding </span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> ⠸ 182/294 ETA:  1h | Embeding </span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> ⠼ 183/294 ETA:  1h | Embeding </span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> ⠴ 184/294 ETA:  1h | Embeding </span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> ⠦ 185/294 ETA:  1h | Embeding </span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> ⠧ 186/294 ETA:  1h | Embeding </span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> ⠇ 187/294 ETA:  1h | Embeding </span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> ⠏ 188/294 ETA:  1h | Embeding </span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> ⠋ 189/294 ETA:  1h | Embeding </span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> ⠙ 190/294 ETA:  1h | Embeding </span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> ⠹ 191/294 ETA:  1h | Embeding </span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> ⠸ 192/294 ETA:  1h | Embeding </span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> ⠼ 193/294 ETA:  1h | Embeding </span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> ⠴ 194/294 ETA:  1h | Embeding </span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> ⠦ 195/294 ETA:  1h | Embeding </span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> ⠧ 196/294 ETA:  1h | Embeding </span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> ⠇ 197/294 ETA:  1h | Embeding </span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> ⠏ 198/294 ETA:  1h | Embeding </span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> ⠋ 199/294 ETA:  1h | Embeding </span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> ⠙ 200/294 ETA:  1h | Embeding </span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> ⠹ 201/294 ETA:  1h | Embeding </span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> ⠸ 202/294 ETA:  1h | Embeding </span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> ⠼ 203/294 ETA:  1h | Embeding </span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> ⠴ 204/294 ETA:  1h | Embeding </span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> ⠦ 205/294 ETA:  1h | Embeding </span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> ⠧ 206/294 ETA:  1h | Embeding </span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> ⠇ 207/294 ETA:  1h | Embeding </span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> ⠏ 208/294 ETA:  1h | Embeding </span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> ⠋ 209/294 ETA:  1h | Embeding </span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> ⠙ 210/294 ETA:  1h | Embeding </span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> ⠹ 211/294 ETA:  1h | Embeding </span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> ⠸ 212/294 ETA:  1h | Embeding </span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> ⠼ 213/294 ETA:  1h | Embeding </span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> ⠴ 214/294 ETA:  1h | Embeding </span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> ⠦ 215/294 ETA:  1h | Embeding </span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> ⠧ 216/294 ETA:  1h | Embeding </span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> ⠇ 217/294 ETA:  1h | Embeding </span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> ⠏ 218/294 ETA:  1h | Embeding </span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> ⠋ 219/294 ETA:  1h | Embeding </span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> ⠙ 220/294 ETA:  1h | Embeding </span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> ⠹ 221/294 ETA:  1h | Embeding </span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> ⠸ 222/294 ETA:  1h | Embeding </span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> ⠼ 223/294 ETA:  1h | Embeding </span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> ⠴ 224/294 ETA:  1h | Embeding </span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> ⠦ 225/294 ETA: 49m | Embeding </span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> ⠧ 226/294 ETA: 49m | Embeding </span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> ⠇ 227/294 ETA: 48m | Embeding </span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> ⠏ 228/294 ETA: 47m | Embeding </span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> ⠋ 229/294 ETA: 48m | Embeding </span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> ⠙ 230/294 ETA: 47m | Embeding </span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> ⠹ 231/294 ETA:  1h | Embeding </span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> ⠸ 232/294 ETA:  1h | Embeding </span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> ⠼ 233/294 ETA:  1h | Embeding </span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> ⠴ 234/294 ETA:  1h | Embeding </span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> ⠦ 235/294 ETA:  1h | Embeding </span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> ⠧ 236/294 ETA:  1h | Embeding </span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> ⠇ 237/294 ETA:  1h | Embeding </span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> ⠏ 238/294 ETA:  1h | Embeding </span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> ⠋ 239/294 ETA:  1h | Embeding </span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> ⠙ 240/294 ETA:  1h | Embeding </span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> ⠹ 241/294 ETA:  1h | Embeding </span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> ⠸ 242/294 ETA:  1h | Embeding </span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> ⠼ 243/294 ETA:  1h | Embeding </span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> ⠴ 244/294 ETA:  1h | Embeding </span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> ⠦ 245/294 ETA:  1h | Embeding </span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> ⠧ 246/294 ETA:  1h | Embeding </span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> ⠇ 247/294 ETA: 49m | Embeding </span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> ⠏ 248/294 ETA: 48m | Embeding </span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> ⠋ 249/294 ETA: 47m | Embeding </span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> ⠙ 250/294 ETA: 45m | Embeding </span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> ⠹ 251/294 ETA: 44m | Embeding </span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> ⠸ 252/294 ETA: 43m | Embeding </span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> ⠼ 253/294 ETA: 42m | Embeding </span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> ⠴ 254/294 ETA: 41m | Embeding </span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> ⠦ 255/294 ETA: 40m | Embeding </span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> ⠧ 256/294 ETA: 39m | Embeding </span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> ⠇ 257/294 ETA: 38m | Embeding </span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> ⠏ 258/294 ETA: 37m | Embeding </span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> ⠋ 259/294 ETA: 36m | Embeding </span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> ⠙ 260/294 ETA: 35m | Embeding </span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> ⠹ 261/294 ETA: 34m | Embeding </span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> ⠸ 262/294 ETA: 33m | Embeding </span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> ⠼ 263/294 ETA: 32m | Embeding </span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> ⠴ 264/294 ETA: 31m | Embeding </span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> ⠦ 265/294 ETA: 30m | Embeding </span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> ⠧ 267/294 ETA: 27m | Embeding </span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> ⠇ 268/294 ETA: 26m | Embeding </span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> ⠏ 269/294 ETA: 25m | Embeding </span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> ⠋ 270/294 ETA: 24m | Embeding </span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> ⠙ 271/294 ETA: 23m | Embeding </span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> ⠹ 272/294 ETA: 22m | Embeding </span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> ⠸ 273/294 ETA: 21m | Embeding </span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> ⠼ 274/294 ETA: 20m | Embeding </span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> ⠴ 275/294 ETA: 19m | Embeding </span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> ⠦ 276/294 ETA: 18m | Embeding </span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> ⠧ 277/294 ETA: 17m | Embeding </span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> ⠇ 278/294 ETA: 16m | Embeding </span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> ⠏ 279/294 ETA: 15m | Embeding </span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> ⠋ 280/294 ETA: 14m | Embeding </span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> ⠙ 281/294 ETA: 13m | Embeding </span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> ⠹ 282/294 ETA: 12m | Embeding </span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> ⠸ 283/294 ETA: 11m | Embeding </span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> ⠼ 284/294 ETA: 10m | Embeding </span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> ⠴ 285/294 ETA:  9m | Embeding </span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> ⠦ 286/294 ETA:  8m | Embeding </span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> ⠧ 287/294 ETA:  7m | Embeding </span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> ⠇ 288/294 ETA:  6m | Embeding </span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> ⠏ 289/294 ETA:  5m | Embeding </span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> ⠋ 290/294 ETA:  4m | Embeding </span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> ⠙ 291/294 ETA:  3m | Embeding </span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> ⠹ 292/294 ETA:  2m | Embeding </span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> ⠸ 293/294 ETA:  1m | Embeding </span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> ⠸ 294/294 ETA:  0s | Embeding </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> [1] "/tmp/RtmpY9Gmf0/OMOP_DATA_FOLDER/my_omop_assistant.duckdb"</span>
 <span class="r-in"><span></span></span>
 <span class="r-in"><span><span class="va">chat</span> <span class="op">&lt;-</span> <span class="fu">ellmerChat</span><span class="op">(</span></span></span>
 <span class="r-in"><span>  name <span class="op">=</span> <span class="st">"my_omop_assistant"</span>,</span></span>
