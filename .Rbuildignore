@@ -7,3 +7,5 @@ extras/
 ^pkgdown$
 ^\.github$
 ^README\.Rmd$
+models/
+^data-raw$

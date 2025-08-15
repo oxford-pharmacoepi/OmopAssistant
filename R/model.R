@@ -111,6 +111,11 @@ storeCreate <- function(embed,
   return(dbdir)
 }
 
+downloadStore <- function(name = "omop_assistant",
+                          overwrite = FALSE) {
+
+}
+
 #' Create an ellmer chat with the data of the omop trained model
 #'
 #' @param name Store name.
@@ -158,10 +163,26 @@ ellmerChat <- function(name = "omop_assistant",
   return(chat)
 }
 
+createkModel <- function(name, overwrite, call = parent.frame()) {
+  dbdir <- .storePath(name = name)
+  if (file.exists(dbdir)) {
+    if (overwrite) {
+      duckdb::duckdb_shutdown(drv = duckdb::duckdb(dbdir = dbdir))
+      unlink(dbdir, force = TRUE)
+      unlink(paste0(dbdir, ".wal"), force = TRUE)
+    } else {
+      cli::cli_abort(c(x = "Model {.pkg {name}} already exists"), call = call)
+    }
+  }
+  return(dbdir)
+}
 dbName <- function(name, call = parent.frame()) {
   omopgenerics::assertCharacter(name, length = 1, call = call)
   if (!endsWith(x = name, suffix = ".duckdb")) {
     name <- paste0(name, ".duckdb")
+  }
+  if (!startsWith(x = name, prefix = "oa_")) {
+    name <- paste0("oa_", name)
   }
   return(name)
 }
