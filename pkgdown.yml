@@ -3,7 +3,7 @@ pkgdown: 2.1.3
 pkgdown_sha: ~
 articles:
   first_omop_assistant: first_omop_assistant.html
-last_built: 2025-08-14T23:09Z
+last_built: 2025-08-15T23:42Z
 urls:
   reference: https://oxford-pharmacoepi.github.io/OmopAssistant/reference
   article: https://oxford-pharmacoepi.github.io/OmopAssistant/articles
