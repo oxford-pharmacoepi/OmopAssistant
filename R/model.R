@@ -3,25 +3,28 @@
 #'
 #' @param name Store name.
 #'
-#' @return String with the path to the store.
+#' @return Path to the model.
 #' @export
 #'
 #' @examples
-#' \donttest{
-#' Sys.setenv("OMOP_DATA_FOLDER" = tempdir())
-#' storePath()
-#' }
+#' library(OmopAssistant)
 #'
-storePath <- function(name = "omop_assistant.duckdb") {
-  # input check
-  name <- dbName(name)
+#' Sys.setenv("OMOP_DATA_FOLDER" = tempdir())
+#' pathModel(name = NULL)
+#'
+pathModel <- function(name = NULL) {
+  if (is.null(name)) {
+    return(getEnvPath())
+  }
 
-  # get model path
-  path <- .storePath(name = name)
+  # get path
+  path <- modelName(name = name) |>
+    fullName() |>
+    modelPath()
 
-  # check if exits
+  # check exists
   if (!file.exists(path)) {
-    cli::cli_warn(c(x = "store does not exist: {.path {path}}"))
+    cli::cli_abort(c(x = "Model {.pkg {name}} does not exist."))
   }
 
   return(path)
@@ -37,64 +40,49 @@ storePath <- function(name = "omop_assistant.duckdb") {
 #' optionally supply a carrier::crate() with packaged data. It can also be NULL
 #' for stores that don't need to embed their texts, for example, if only using
 #' FTS algorithms such as ragnar_retrieve_bm25().
+#' @param chunks a character vector or a dataframe with a text column, and
+#' optionally, a pre-computed `embedding` matrix column. If `embedding` is not
+#' present, then `store@embed()` is used. `chunks` can also be a character
+#' vector.
 #' @param name Store name.
 #' @param overwrite Whether to overwrite a preexisting store.
+#' @param ... Passed to `ragnar::ragnar_store_create()`.
 #'
-#' @return String with the path to the store.
+#' @return Path to the trained model.
 #' @export
 #'
-#' @examples
-#' \donttest{
-#' storeCreate(
-#'   embed = \(x) ragnar::embed_ollama(x, model = "mxbai-embed-large"),
-#'   name = "my_omop_assistant"
-#' )
-#'
-#' chat <- ellmerChat(
-#'   name = "my_omop_assistant",
-#'   chat = ellmer::chat_google_gemini(),
-#'   top_k = 10L
-#' )
-#'
-#' chat$chat("How to create an acetaminophen cohort?")
-#' }
-#'
-storeCreate <- function(embed,
-                        name = "omop_assistant",
-                        overwrite = FALSE) {
+trainModel <- function(embed,
+                       chunks,
+                       name,
+                       overwrite = FALSE,
+                       ...) {
   # input check
-  name <- dbName(name)
+  name <- modelName(name = name)
   omopgenerics::assertLogical(overwrite, length = 1)
 
-  # get db directory
-  dbdir <- .storePath(name = name)
-
-  # check if exist
-  if (file.exists(dbdir)) {
-    if (overwrite) {
-      duckdb::duckdb_shutdown(drv = duckdb::duckdb(dbdir = dbdir))
-      unlink(dbdir, force = TRUE)
-      unlink(paste0(dbdir, ".wal"), force = TRUE)
-    } else {
-      cli::cli_inform(c(i = "Using already created storage in: {.path {dbdir}}."))
-      return(dbdir)
-    }
-  }
+  dbdir <- overwriteModel(name = name, overwrite = overwrite)
 
   # check embed
   if (missing(embed)) {
     cli::cli_abort(c(x = "Please provide a embed model to embed the documentation."))
   }
 
+  # check chunks
+  if (missing(chunks)) {
+    cli::cli_abort(c(x = "Please provide chunks to embed in the model."))
+  }
+
   # Create storage
   store <- ragnar::ragnar_store_create(
     location = dbdir,
     embed = embed,
-    name = "omopverse"
+    name = name,
+    ...
   )
 
-  # Reading online documentation
-  chunks <- documentationChunks()
+  if (inherits(chunks, "ragnar::MarkdownDocumentChunks")) {
+    chunks <- list(chunks)
+  }
 
   # Embeding information
   cli::cli_inform(c(i = "Embeding retrieved information."))
@@ -111,82 +99,93 @@ storeCreate <- function(embed,
   return(dbdir)
 }
 
-downloadStore <- function(name = "omop_assistant",
-                          overwrite = FALSE) {
-
-}
-
-#' Create an ellmer chat with the data of the omop trained model
+#' Download a preexisting model
 #'
-#' @param name Store name.
-#' @param chat A chat object.
-#' @param ... Arguments passed to `ragnar::ragnar_register_tool_retrieve()`
+#' @param name Name of the model to download. See options using `avialableModels()`.
+#' @param overwrite Whether to overwrite a preexisting model.
 #'
-#' @return The chat object with the trained store and prompt.
+#' @return Path to the downloaded model.
 #' @export
 #'
 #' @examples
 #' \donttest{
-#' storeCreate(
-#'   embed = \(x) ragnar::embed_ollama(x, model = "mxbai-embed-large"),
-#'   name = "my_omop_assistant"
-#' )
+#' library(OmopAssistant)
 #'
-#' chat <- ellmerChat(
-#'   name = "my_omop_assistant",
-#'   chat = ellmer::chat_google_gemini(),
-#'   top_k = 10L
-#' )
+#' Sys.setenv("OMOP_DATA_FOLDER" = tempdir())
 #'
-#' chat$chat("How to create an acetaminophen cohort?")
+#' downloadedModels()
+#' downloadModel(name = "omop_assistant")
+#' downloadedModels()
 #' }
 #'
-ellmerChat <- function(name = "omop_assistant",
-                       chat = ellmer::chat_google_gemini(),
-                       ...) {
-  # check name
-  name <- dbName(name = name)
-  suppressMessages(dbdir <- .storePath(name = name))
-  if (!file.exists(dbdir)) {
-    cli::cli_abort(c(x = "{.pkg {name}} does not exist, please use {.code storeCreate()} to create it first."))
-  }
+downloadModel <- function(name = "omop_assistant",
+                          overwrite = FALSE) {
+  # input check
+  name <- modelName(name = name)
+  omopgenerics::assertLogical(overwrite, length = 1)
+  omopgenerics::assertChoice(x = name, choices = names(urls))
 
-  # set prompt
-  cli::cli_inform(c(i = "Set system prompt."))
-  chat$set_system_prompt(value = prompt())
+  dbdir <- overwriteModel(name = name, overwrite = overwrite)
+  con <- duckdb::dbConnect(drv = duckdb::duckdb(dbdir = dbdir))
+  duckdb::dbDisconnect(conn = con)
 
-  # add store
-  cli::cli_inform(c(i = "Adding store to the chat."))
-  store <- ragnar::ragnar_store_connect(location = dbdir)
-  chat <- ragnar::ragnar_register_tool_retrieve(chat = chat, store = store, ...)
+  utils::download.file(url = urls[[name]], destfile = dbdir)
 
-  return(chat)
+  invisible(dbdir)
 }
 
-createkModel <- function(name, overwrite, call = parent.frame()) {
-  dbdir <- .storePath(name = name)
-  if (file.exists(dbdir)) {
-    if (overwrite) {
-      duckdb::duckdb_shutdown(drv = duckdb::duckdb(dbdir = dbdir))
-      unlink(dbdir, force = TRUE)
-      unlink(paste0(dbdir, ".wal"), force = TRUE)
-    } else {
-      cli::cli_abort(c(x = "Model {.pkg {name}} already exists"), call = call)
-    }
-  }
-  return(dbdir)
+#' Title
+#'
+#' @return Available models.
+#' @export
+#'
+#' @examples
+#' library(OmopAssistant)
+#'
+#' avialableModels()
+#'
+avialableModels <- function() {
+  names(urls)
 }
-dbName <- function(name, call = parent.frame()) {
+
+#' Title
+#'
+#' @return Models that have been downloaded.
+#' @export
+#'
+#' @examples
+#' \donttest{
+#' library(OmopAssistant)
+#'
+#' path <- file.path(tempdir(), "OMOP_DATA_FOLDER")
+#' dir.create(path = path)
+#' Sys.setenv("OMOP_DATA_FOLDER" = path)
+#'
+#' downloadedModels()
+#' downloadModel(name = "omop_assistant")
+#' downloadedModels()
+#' }
+#'
+downloadedModels <- function() {
+  # find paths
+  x <- list.files(path = getEnvPath())
+  x <- x[startsWith(x = x, prefix = "oa_")]
+  x <- x[endsWith(x = x, suffix = ".duckdb")]
+
+  # extract names
+  stringr::str_match(string = x, pattern = "^oa_(.*)\\.duckdb$")[,2]
+}
+
+modelName <- function(name, call = parent.frame()) {
   omopgenerics::assertCharacter(name, length = 1, call = call)
-  if (!endsWith(x = name, suffix = ".duckdb")) {
-    name <- paste0(name, ".duckdb")
-  }
-  if (!startsWith(x = name, prefix = "oa_")) {
-    name <- paste0("oa_", name)
-  }
-  return(name)
+  name |>
+    stringr::str_remove(pattern = "\\.duckdb$") |>
+    stringr::str_remove(pattern = "^oa_")
 }
-.storePath <- function(name) {
+fullName <- function(name) {
+  paste0("oa_", name, ".duckdb")
+}
+modelPath <- function(name) {
   file.path(getEnvPath(), name)
 }
 getEnvPath <- function() {
@@ -198,24 +197,21 @@ getEnvPath <- function() {
     cli::cli_inform(c(i = "`OMOP_DATA_FOLDER` environment variable is not set, using temp directory."))
     path <- file.path(tempdir(), "OMOP_DATA_FOLDER")
     dir.create(path = path, showWarnings = FALSE)
+    Sys.setenv("OMOP_DATA_FOLDER" = path)
   }
 
   return(path)
 }
-prompt <- function() {
-  stringr::str_squish(
-    "
-  You are an expert R programmer and epidemiologist working with OMOP CDM data.
-  Use concise, accurate R examples using OMOPverse packages (e.g. CDMConnector,
-  CohortConstructor).
-
-  Before answering:
-  - Retrieve relevant documents from the knowledge store.
-  - Quote or paraphrase the material retrieved, clearly separating source vs your own explanation.
-  - Include direct links to cited content (e.g. .io documentation pages).
-  - If no relevant information is found, say 'No information available.'
-
-  Only answer if source material is retrieved.
-  "
-  )
+overwriteModel <- function(name, overwrite, call = parent.frame()) {
+  dbdir <- modelPath(name = fullName(name = name))
+  if (file.exists(dbdir)) {
+    if (overwrite) {
+      duckdb::duckdb_shutdown(drv = duckdb::duckdb(dbdir = dbdir))
+      unlink(dbdir, force = TRUE)
+      unlink(paste0(dbdir, ".wal"), force = TRUE)
+    } else {
+      cli::cli_abort(message = c(x = "Model {.pkg {name}} already exists and `overwrite = FALSE`."), call = call)
+    }
+  }
+  return(dbdir)
 }

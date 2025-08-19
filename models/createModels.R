@@ -86,5 +86,6 @@ cli::cli_progress_done()
 # build store index
 ragnar::ragnar_store_build_index(store = store)
 
-drv <- duckdb::duckdb(dbdir = dbdir)
-duckdb::duckdb_shutdown(drv = drv)
+con <- duckdb::dbConnect(drv = duckdb::duckdb(dbdir = dbdir))
+DBI::dbWriteTable(conn = con, name = "oa_prompt", value = dplyr::tibble(prompt = prompt))
+DBI::dbDisconnect(conn = con)
